@@ -1,0 +1,48 @@
+div {
+    border: 1px solid black;
+}
+
+.projectbox-main {
+    width: 200px;
+    height: 300px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.projectbox-buttoncontainer {
+    display: flex;
+}
+
+.projectbox-header {
+    display: flex;
+}
+
+.projectbox-statusinfo {
+    display: flex;
+}
+
+.projectbox-id {
+    margin-left: auto;
+}
+
+.projectbox-version {
+    margin-left: auto;
+}
+
+.projectbox-date {
+    display: inline-block;
+    
+}
+
+.projectbox-arschloch {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.spacer {
+    height: 100%;
+}
