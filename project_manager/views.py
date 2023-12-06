@@ -24,5 +24,12 @@ def upload_form(request):
 
 
 def project_form(request):
+    if request.method == "POST":
+        submission = forms.UploadForm(request.POST, request.FILES)
+        if submission.is_valid():
+            new_upload = submission.save()
+        else:
+            print(submission.errors)
+            return HttpResponseRedirect("/error/")
     form = forms.ProjectForm()
-    return render(request, "standard_form.html", {"form": form})
+    return render(request, "new_project.html", {"form": form})

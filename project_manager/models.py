@@ -27,7 +27,7 @@ class Project(models.Model):
          
     name = models.CharField(max_length=100)
     description = models.TextField()
-    thumbnail_image = models.ImageField(upload_to="upload/")
+    thumbnail_image = models.ImageField(upload_to="upload/", default="project_manager/default_image.jpg", blank=True)
     status = models.CharField(max_length = 11, choices = status_choices.choices, default = status_choices.not_started)
     current_version = models.IntegerField(default=1)
     updated = models.DateTimeField(auto_now=True)
