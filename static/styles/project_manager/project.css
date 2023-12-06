@@ -1,0 +1,106 @@
+body{
+    display: flex;
+    gap: 5px;
+}
+
+
+p{
+    margin: 0px;
+}
+
+.bordered {
+    border: 1px solid grey;
+}
+
+.projectbox-main {
+    width: 200px;
+    height: 300px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    /*box-shadow: 0px 0px 10px 5px azure;*/
+}
+
+.projectbox-header {
+    display: flex;
+    font-size: large;
+    border-radius: 5px;
+    background-color: rgb(248, 223, 191);
+}
+.projectbox-header p{
+    margin: 3px;
+}
+
+.projectbox-imagecontainer {
+    display: flex;
+    overflow: hidden;
+    background-color: azure;
+    justify-content: center;
+}
+
+.projectbox-imagecontainer img{
+    object-fit: contain;
+    max-height: 100%;
+}
+
+.projectbox-statusinfo {
+    display: flex;
+}
+.projectbox-statusinfo p{
+    margin: 3px;
+}
+.projectbox-status{
+    border-radius: 10px;
+    padding: 1px;
+}
+
+.projectbox-id {
+    margin-left: auto;
+}
+
+.projectbox-version {
+    margin-left: auto;
+}
+
+.projectbox-datecontainer {
+    display: flex;
+}
+table{
+    width: 100%;
+}
+.table-value {
+    text-align: end;
+}
+
+.projectbox-buttoncontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.projectbox-buttoncontainer a {
+    background-color: aquamarine;
+    box-shadow: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.projectbox-buttoncontainer a:hover {
+    background-color: rgb(102, 248, 200);
+    box-shadow: 0px 0px 10px 0px rgb(102, 248, 200);
+    transition: box-shadow 0.3s, background-color 0.3s;
+  }

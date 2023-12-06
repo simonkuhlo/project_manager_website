@@ -22,3 +22,7 @@ def upload_form(request):
 
     return render(request, "upload_form.html", {"form": form})
 
+
+def project_form(request):
+    form = forms.ProjectForm()
+    return render(request, "standard_form.html", {"form": form})

@@ -1,0 +1,25 @@
+/* ps = "project status" */
+
+.ps-not_started{
+    background-color: lightgray;
+}
+
+.ps-planning{
+    background-color: lightgray;
+}
+
+.ps-ongoing{
+    background-color: lightblue;
+}
+
+.ps-paused{
+    background-color: lightsalmon;
+}
+
+.ps-finished{
+    background-color: lightgreen;
+}
+
+.ps-dropped{
+    background-color: red;
+}
