@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
-from . import forms
+from .. import forms
 
 def upload_form(request):
     # if this is a POST request we need to process the form data
@@ -20,16 +20,16 @@ def upload_form(request):
     #else:
     form = forms.UploadForm()
 
-    return render(request, "upload_form.html", {"form": form})
+    return render(request, "project_manager/forms/upload_form.html", {"form": form})
 
 
 def project_form(request):
     if request.method == "POST":
-        submission = forms.UploadForm(request.POST, request.FILES)
+        submission = forms.ProjectForm(request.POST, request.FILES)
         if submission.is_valid():
             new_upload = submission.save()
         else:
             print(submission.errors)
             return HttpResponseRedirect("/error/")
     form = forms.ProjectForm()
-    return render(request, "new_project.html", {"form": form})
+    return render(request, "project_manager/forms/new_project.html", {"form": form})

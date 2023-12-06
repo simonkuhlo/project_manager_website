@@ -1,11 +1,11 @@
-body{
-    display: flex;
-    gap: 5px;
-}
-
 
 p{
     margin: 0px;
+}
+
+.projectbox-container{
+    display: flex;
+    gap: 5px;
 }
 
 .bordered {
