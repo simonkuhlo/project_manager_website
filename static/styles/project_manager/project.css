@@ -40,6 +40,7 @@ p{
     overflow: hidden;
     background-color: azure;
     justify-content: center;
+    height: 100%;
 }
 
 .projectbox-imagecontainer img{

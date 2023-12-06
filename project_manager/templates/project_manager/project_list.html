@@ -13,15 +13,15 @@
 
         <div class="bordered projectbox-header">
             <div class="projectbox-title">
-                <p>Project-name</p>
+                <p>{{project.name}}</p>
             </div>
             <div class="projectbox-id">
-                <p>113</p>
+                <p>{{project.id}}</p>
             </div>
         </div>
 
         <div class="bordered projectbox-imagecontainer">
-            <img src="img/test.jpg" alt="NO IMAGE">
+            <img src="{{project.thumbnail_image.url}}" alt="NO IMAGE">
         </div>
 
         <div class="projectbox-statusinfo">      

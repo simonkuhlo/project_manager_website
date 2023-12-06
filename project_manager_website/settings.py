@@ -122,10 +122,12 @@ DJANGO_TABLES2_TEMPLATE = "django_tables2/bootstrap4.html"
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static'
+    BASE_DIR / 'static',
 ]
 
 #https://docs.djangoproject.com/en/4.2/ref/settings/#media-root
+MEDIA_URL = '/media/'
+
 MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
