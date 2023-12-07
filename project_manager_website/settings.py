@@ -126,7 +126,7 @@ STATICFILES_DIRS = [
 ]
 
 #https://docs.djangoproject.com/en/4.2/ref/settings/#media-root
-MEDIA_URL = '/media/'
+MEDIA_URL = 'media/'
 
 MEDIA_ROOT = BASE_DIR / 'media'
 
