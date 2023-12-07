@@ -25,11 +25,11 @@
         </div>
 
         <div class="projectbox-statusinfo">      
-            <div class="projectbox-status ps-paused">
-                <p>Paused</p>
+            <div class="projectbox-status ps-{{project.status}}">
+                <p>{{project.status}}</p>
             </div>
             <div class="projectbox-version">
-                <p>v4</p>
+                <p>v{{project.current_version}}</p>
             </div>
         </div>
 
@@ -38,11 +38,11 @@
             <table>
                 <tr>
                     <td>Last Update:</td>
-                    <td class="table-value">12.03.2023</td>
+                    <td class="table-value">{{project.updated.date}}</td>
                 </tr>
                 <tr>
                     <td>Started:</td>
-                    <td class="table-value">12.03.2023</td>
+                    <td class="table-value">{{project.created.date}}</td>
                 </tr>
             </table>
         </div>    
