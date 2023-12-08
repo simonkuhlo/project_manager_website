@@ -1,5 +1,16 @@
+{% extends 'main.html'%}
+
+
+{% block content %}
+
+{% load static %}
+<link rel='stylesheet' type='text/css' media='screen' href="{% static 'styles/forms/SForm.css' %}">
+
+
 <form action="/manager/new_project" method="post" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form }}
     <input type="submit" value="Submit">
 </form>
+
+{% endblock %}
