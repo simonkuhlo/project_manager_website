@@ -9,7 +9,7 @@ urlpatterns = [
     path('', views.formviews.upload_form, name = "upload_form"),
     path('new_project', views.formviews.project_form, name = "project_form"),
     path('project_list', views.listviews.project_list, name = "project_list"),
-    path('project:<str:pk>/', views.single_key, name = "single_key"),
+    path('project:<str:pk>/', views.views.project_details, name = "project_list"),
 ]
 # Serving the media files in development mode
 if settings.DEBUG:
