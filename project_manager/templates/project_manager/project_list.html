@@ -3,13 +3,13 @@
 {% block content %}
 
 {% load static %}
-<link rel='stylesheet' type='text/css' media='screen' href="{% static 'styles/project_manager/project-statuses.css' %}">
-<link rel='stylesheet' type='text/css' media='screen' href="{% static 'styles/project_manager/project.css' %}">
+<link rel='stylesheet' type='text/css' media='screen' href="{% static 'styles/as/project_manager/ds-project-statuses.css' %}">
+<link rel='stylesheet' type='text/css' media='screen' href="{% static 'styles/as/project_manager/ds-project.css' %}">
 
 <div class="projectbox-container">
 
     {% for project in project_list %}
-        {% include 'project_manager/assets/project-card.html' %}
+        {% include 'project_manager/inc/project-card.html' %}
     {% endfor %}
 
 </div>
