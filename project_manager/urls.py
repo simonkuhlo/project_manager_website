@@ -11,8 +11,3 @@ urlpatterns = [
     path('project_list', views.views.project_list, name = "project_list"),
     path('project:<str:pk>/', views.views.project_details, name = "project_list"),
 ]
-# Serving the media files in development mode
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-else:
-    urlpatterns += staticfiles_urlpatterns()
