@@ -11,7 +11,7 @@ def project_list(request):
     ctx = {"project_list" : projects}
     return render(request, 'project_manager/project_list.html', ctx)
 
-def project_details(request, id):
-    project = models.Project.objects.get(id=id)
+def project_details(request, pk):
+    project = models.Project.objects.get(id=pk)
     ctx = {"project" : project}
     return render(request, 'project_manager/project_details.html', ctx)

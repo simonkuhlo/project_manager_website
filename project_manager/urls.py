@@ -11,5 +11,5 @@ urlpatterns = [
     
     path('new_project', views.formviews.project_form, name = "project_form"),
     path('project_list', views.views.project_list, name = "project_list"),
-    path('project:<str:pk>/', views.views.project_details, name = "project_list"),
+    path('project:<str:pk>/', views.views.project_details, name = "project_details"),
 ]
