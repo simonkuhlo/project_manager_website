@@ -3,8 +3,10 @@
 {% block content %}
 
 {% load static %}
-<link rel='stylesheet' type='text/css' media='screen' href="{% static 'styles/as/project_manager/ds-project-statuses.css' %}">
+<link rel='stylesheet' type='text/css' media='screen' href="{% static 'styles/as/project_manager/ds-project_statuses.css' %}">
+<link rel='stylesheet' type='text/css' media='screen' href="{% static 'styles/as/project_manager/ds-project_details.css' %}">
 
+<div class="fc" id="container">
 <div class="fc fc_column fc_standard" id="main">
 
     <div class="fc fc_row fc_standard" id="top-bar">
@@ -26,9 +28,9 @@
                     09.12.2023
                 </p>
 
-                <p class="" id="status-version">
-                    Started
-                </p>
+                <div class="bd ps-{{project.status}}">
+                    <p>{{project.status}}</p>
+                </div>
             </div>
 
         </div>
@@ -116,6 +118,6 @@
     
 </div>
 
-
+</div>
 
 {% endblock %}
