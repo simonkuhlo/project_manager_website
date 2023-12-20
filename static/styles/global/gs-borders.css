@@ -28,3 +28,8 @@ This file contains all standard borders for html styling
 .bd_box {
     border: 3px solid var(--border_color);
 }
+
+.bd_status {
+    padding: 5px;
+    border-radius: 15px;
+}
